@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beyond Her Worth | Beyond the Bar</title>
+<meta name="description" content="An online conversation on women and financial independence, hosted by Beyond the Bar. Sunday, 1 November 2026, 12:30 to 1:30 PM IST on Webex. Fee ₹149.">
+<meta property="og:title" content="Beyond Her Worth | Beyond the Bar">
+<meta property="og:description" content="An online conversation on women and financial independence. Sunday, 1 November 2026, 12:30 to 1:30 PM IST on Webex. Fee ₹149.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://beyondthebarcommunity.github.io/">
+<meta property="og:image" content="https://beyondthebarcommunity.github.io/assets/share.jpg">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1350">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#ECDCC6">
+<style>
+@font-face{font-family:'Fraunces';font-weight:100 900;font-display:swap;src:url('fonts/fraunces.woff2') format('woff2-variations');}
+@font-face{font-family:'Fraunces';font-style:italic;font-weight:100 900;font-display:swap;src:url('fonts/fraunces-italic.woff2') format('woff2-variations');}
+@font-face{font-family:'Typed';font-weight:400;font-display:swap;src:url('fonts/courier-prime.woff2') format('woff2');}
+@font-face{font-family:'Typed';font-weight:700;font-display:swap;src:url('fonts/courier-prime-bold.woff2') format('woff2');}
+
+:root{
+  --beige:#ECDCC6;
+  --paper:#F7EDE0;
+  --pink:#F2B9B3;
+  --pink-deep:#E89F99;
+  --orange:#D95034;
+  --orange-text:#B83E24;   /* darker orange for small text on light backgrounds */
+  --ink:#2B1B15;
+  --ink-soft:#5A463C;
+  --line:rgba(43,27,21,.22);
+  --display:'Fraunces',Georgia,serif;
+  --typed:'Typed','Courier New',monospace;
+  --form:'https://forms.gle/9GgJEgpPT6nU1jws9';
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html,body{overflow-x:clip}
+body{background:var(--beige);color:var(--ink);font-family:var(--display);font-variation-settings:"opsz" 14;font-size:18px;line-height:1.6;
+  background-image:radial-gradient(rgba(43,27,21,.05) 1px,transparent 1.2px);background-size:22px 22px}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:4px}
+
+.wrap{width:100%;max-width:760px;margin:0 auto;padding:0 20px}
+
+/* preview tag */
+.preview{position:fixed;top:12px;right:12px;z-index:60;background:var(--ink);color:var(--paper);font-family:var(--typed);font-weight:700;font-size:13px;padding:6px 12px;border-radius:999px}
+
+/* ---------- hero ---------- */
+.hero{padding:40px 0 30px;text-align:center}
+.hero .logo{width:150px;margin:0 auto 34px}
+
+.file{position:relative;max-width:640px;margin:0 auto;text-align:left;transform:rotate(-1.2deg)}
+.file .back{position:absolute;inset:0;background:var(--pink-deep);border-radius:6px;transform:translate(8px,-10px) rotate(1.2deg)}
+.file .tab{position:absolute;top:-30px;right:30px;background:var(--pink);border-radius:10px 10px 0 0;font-family:var(--typed);font-size:14px;padding:7px 18px 10px}
+.file .cover{position:relative;background:var(--pink);border-radius:6px;padding:34px 22px 30px 66px;box-shadow:0 26px 40px -22px rgba(80,30,20,.5)}
+.file .tape{position:absolute;top:-18px;bottom:-18px;left:28px;width:18px;background:var(--orange);
+  background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.08) 0 2px,transparent 2px 5px)}
+.matter{font-family:var(--typed);font-size:15px}
+h1{font-family:var(--display);font-weight:900;font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144;font-size:clamp(48px,12vw,92px);line-height:.88;letter-spacing:-.02em;margin:8px 0 22px}
+.party{display:flex;align-items:baseline;gap:8px;font-family:var(--typed);font-size:clamp(13px,3.6vw,17px);line-height:1.35}
+.party .dots{flex:1;min-width:14px;border-bottom:2px dotted rgba(43,27,21,.5);transform:translateY(-4px)}
+.party b{white-space:nowrap}
+.vs{font-family:var(--display);font-style:italic;font-size:22px;color:var(--orange-text);margin:2px 0 2px 22px}
+.hr{height:1.5px;background:rgba(43,27,21,.6);margin:22px 0 16px}
+.listed{font-family:var(--typed);font-size:14px;margin-bottom:8px}
+.facts{display:grid;grid-template-columns:auto 1fr;column-gap:14px;row-gap:2px;font-family:var(--typed);font-size:clamp(14px,3.8vw,19px);line-height:1.4}
+.facts dt{color:var(--ink-soft)}
+.facts dd{font-weight:700}
+
+.stamp{position:absolute;right:-14px;bottom:-34px;width:clamp(110px,28vw,160px);transform:rotate(-14deg);mix-blend-mode:multiply;z-index:3}
+@media (prefers-reduced-motion:no-preference){
+  .stamp{animation:thunk .45s cubic-bezier(.2,1.6,.4,1) .5s both}
+  @keyframes thunk{from{opacity:0;transform:rotate(-14deg) scale(1.7)}to{opacity:1;transform:rotate(-14deg) scale(1)}}
+}
+
+.hero .lede{font-style:italic;font-variation-settings:"opsz" 72;font-size:clamp(22px,5.4vw,30px);line-height:1.2;margin:58px auto 8px;max-width:560px}
+.hero .for{font-family:var(--typed);font-size:15px;color:var(--ink-soft);max-width:520px;margin:0 auto}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--ink);color:var(--paper);text-decoration:none;
+  font-family:var(--typed);font-weight:700;font-size:18px;padding:17px 30px;border-radius:999px;min-height:56px;transition:transform .15s ease, background .15s ease}
+.btn:hover{background:#000;transform:translateY(-1px)}
+.btn .fee{background:var(--orange);color:var(--paper);border-radius:999px;padding:2px 10px;font-size:15px}
+.hero .btn{margin-top:28px}
+.small{font-family:var(--typed);font-size:13px;color:var(--ink-soft);margin-top:12px}
+
+/* ---------- sections ---------- */
+section{padding:52px 0}
+.kicker{font-family:var(--typed);font-size:14px;color:var(--orange-text);margin-bottom:10px}
+h2{font-family:var(--display);font-weight:800;font-variation-settings:"SOFT" 50,"opsz" 96;font-size:clamp(30px,7.4vw,46px);line-height:1.05;letter-spacing:-.01em;margin-bottom:20px}
+p+p{margin-top:14px}
+
+/* why */
+.pull{margin-top:34px;padding:26px 24px;background:var(--paper);border-left:6px solid var(--orange);font-style:italic;font-variation-settings:"opsz" 72;font-size:clamp(22px,5.2vw,28px);line-height:1.25}
+
+/* topics: an index of points */
+.points{list-style:none;border-top:1.5px solid var(--ink)}
+.points li{display:grid;grid-template-columns:1fr;gap:4px;padding:20px 0;border-bottom:1px solid var(--line)}
+.points h3{font-family:var(--display);font-weight:700;font-variation-settings:"opsz" 36;font-size:23px;line-height:1.2}
+.points p{color:var(--ink-soft)}
+@media (min-width:640px){.points li{grid-template-columns:240px 1fr;gap:24px;align-items:baseline}}
+
+/* who */
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.tags span{background:var(--pink);border-radius:18px;padding:10px 16px;font-family:var(--typed);font-size:15px;line-height:1.3}
+.note{margin-top:22px;font-family:var(--typed);font-size:15px;color:var(--ink-soft)}
+
+/* speaker placeholder */
+.speaker{display:flex;gap:20px;align-items:center;background:var(--paper);border:2px dashed var(--pink-deep);border-radius:12px;padding:22px}
+.speaker .ph{flex:0 0 84px;height:84px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:900;font-size:34px;color:var(--paper)}
+.speaker b{display:block;font-weight:700;font-size:20px;line-height:1.25}
+.speaker span{display:block;margin-top:4px;font-family:var(--typed);font-size:14px;line-height:1.45;color:var(--ink-soft)}
+
+/* steps: a real sequence */
+.steps{list-style:none;counter-reset:s;display:grid;gap:14px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;background:var(--paper);border-radius:12px;padding:18px}
+.steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;background:var(--orange);color:var(--paper);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:900;font-size:24px}
+.steps b{display:block;font-size:19px;line-height:1.3}
+.steps span{display:block;margin-top:2px;color:var(--ink-soft);font-size:16px;line-height:1.5}
+.reg-cta{margin-top:26px;text-align:center}
+
+/* faq */
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1.5px solid var(--ink)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;padding:18px 0;font-weight:700;font-size:19px;line-height:1.35}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--typed);font-size:26px;line-height:1;color:var(--orange-text);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details .a{padding:0 0 20px;color:var(--ink-soft);max-width:600px}
+.tbc{background:#FFF3B0;color:var(--ink);font-family:var(--typed);font-size:14px;padding:2px 8px;border-radius:4px}
+
+/* about */
+.about{background:var(--pink);border-radius:16px;padding:36px 24px;text-align:center}
+.about img{width:120px;margin:0 auto 18px}
+.about p{max-width:520px;margin:0 auto}
+.about .links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:24px}
+.btn.light{background:var(--paper);color:var(--ink)}
+.btn.light:hover{background:#fff}
+
+footer{padding:40px 0 130px;text-align:center;font-family:var(--typed);font-size:13px;color:var(--ink-soft)}
+
+/* sticky register bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--paper);border-top:1.5px solid var(--ink);
+  padding:12px 16px calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;justify-content:space-between;gap:12px;
+  transform:translateY(110%);visibility:hidden;transition:transform .25s ease,visibility 0s linear .25s}
+.bar.show{transform:none;visibility:visible;transition:transform .25s ease,visibility 0s}
+.bar .t{font-family:var(--typed);font-size:14px;line-height:1.3}
+.bar .t b{display:block;font-family:var(--display);font-weight:800;font-size:17px}
+.bar .btn{padding:12px 20px;min-height:48px;font-size:16px;flex:0 0 auto}
+@media (min-width:900px){.bar{left:50%;right:auto;bottom:18px;transform:translate(-50%,160%);width:720px;border:1.5px solid var(--ink);border-radius:999px;padding:10px 10px 10px 26px}
+  .bar.show{transform:translate(-50%,0)}}
+
+@media (max-width:560px){
+  .file .cover{padding:30px 18px 70px 50px}
+  .file .tape{left:20px;width:15px}
+  .party{flex-wrap:wrap;column-gap:0}
+  .party .dots{display:none}
+  .party span{flex-basis:100%}
+  .party b{font-size:12px;color:var(--ink-soft);margin-top:2px}
+  .vs{margin:6px 0 4px 0}
+  .stamp{right:-6px;bottom:-40px;width:118px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="preview" aria-hidden="true">Preview</div>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="logo" src="assets/wordmark.png" alt="Beyond the Bar" width="150" height="143">
+
+    <div class="file">
+      <div class="back"></div>
+      <div class="tab">Women &amp; money</div>
+      <div class="cover">
+        <div class="tape" aria-hidden="true"></div>
+        <div class="matter">In the matter of</div>
+        <h1>Beyond Her Worth</h1>
+        <div class="party"><span>Her financial independence</span><span class="dots"></span><b>Petitioner</b></div>
+        <div class="vs">versus</div>
+        <div class="party"><span>"I'll sort my money later"</span><span class="dots"></span><b>Respondent</b></div>
+        <div class="hr"></div>
+        <div class="listed">Listed for hearing</div>
+        <dl class="facts">
+          <dt>On</dt><dd>Sunday, 1 November 2026</dd>
+          <dt>At</dt><dd>12:30 to 1:30 PM IST</dd>
+          <dt>Court</dt><dd>Online, on Webex</dd>
+        </dl>
+      </div>
+      <svg class="stamp" viewBox="0 0 260 260" role="img" aria-label="Registrations open. Entry fee 149 rupees">
+        <defs>
+          <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+            <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.1 1.3" result="m"/>
+            <feComposite in="SourceGraphic" in2="m" operator="in"/></filter>
+          <path id="ring" d="M130,130 m-96,0 a96,96 0 1,1 192,0 a96,96 0 1,1 -192,0"/>
+        </defs>
+        <g filter="url(#rough)" fill="none" stroke="#D95034">
+          <circle cx="130" cy="130" r="124" stroke-width="7"/>
+          <circle cx="130" cy="130" r="72" stroke-width="3"/>
+          <text font-family="Typed" font-weight="700" font-size="25" letter-spacing="3.4" fill="#D95034" stroke="none"><textPath href="#ring">REGISTRATIONS OPEN · ENTRY FEE ·</textPath></text>
+          <text x="130" y="148" text-anchor="middle" font-family="Fraunces" font-weight="900" font-size="54" fill="#D95034" stroke="none">&#8377;149</text>
+        </g>
+      </svg>
+    </div>
+
+    <p class="lede">A conversation on women and financial independence.</p>
+    <p class="for">Especially for women in law, and for any woman who wants to feel more confident about money.</p>
+    <a class="btn js-register" id="hero-cta" href="https://forms.gle/9GgJEgpPT6nU1jws9" target="_blank" rel="noopener">Register now <span class="fee">&#8377;149</span></a>
+    <p class="small">Opens the registration form</p>
+  </div>
+</header>
+
+<main>
+  <section id="why">
+    <div class="wrap">
+      <p class="kicker">Why this conversation</p>
+      <h2>We learn to earn, but what about managing money?</h2>
+      <p>We talk about earning money. But do we talk enough about managing it?</p>
+      <p>Financial independence isn't just about how much you earn. It's about understanding where your money goes, preparing for uncertainty and making informed decisions about your future.</p>
+      <p>For women in law, an independent practice, irregular income and delayed payments can make financial planning challenging. That's why understanding your finances matters.</p>
+      <blockquote class="pull">Because earning is one step. Knowing what to do with it is another.</blockquote>
+    </div>
+  </section>
+
+  <section id="topics">
+    <div class="wrap">
+      <p class="kicker">Points for discussion</p>
+      <h2>What we'll talk about</h2>
+      <ul class="points">
+        <li><h3>Budgeting and savings</h3><p>Understand your income, expenses and saving habits.</p></li>
+        <li><h3>Financial security</h3><p>Build an emergency fund and understand the basics of insurance.</p></li>
+        <li><h3>Investing fundamentals</h3><p>Learn about risk, time horizons and informed financial decisions.</p></li>
+        <li><h3>Planning ahead</h3><p>Take practical steps towards your financial goals.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="who">
+    <div class="wrap">
+      <p class="kicker">Who should attend</p>
+      <h2>A conversation for women who are building their future</h2>
+      <div class="tags">
+        <span>Women advocates and independent practitioners</span>
+        <span>Law students beginning their careers</span>
+        <span>Salaried professionals</span>
+        <span>Women who want to become more financially confident</span>
+      </div>
+      <p class="note">Open to women only. You don't need to know everything about money to get started.</p>
+    </div>
+  </section>
+
+  <section id="speaker">
+    <div class="wrap">
+      <p class="kicker">Speaker</p>
+      <div class="speaker">
+        <div class="ph" aria-hidden="true">?</div>
+        <div><b>Speaker details coming soon</b><span>We'll announce who's leading the conversation here shortly.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="register">
+    <div class="wrap">
+      <p class="kicker">How to register</p>
+      <h2>Three steps to your seat</h2>
+      <ol class="steps">
+        <li><div><b>Fill in the registration form</b><span>Your name, email, WhatsApp number and a few quick questions.</span></div></li>
+        <li><div><b>Pay &#8377;149 and upload the screenshot</b><span>Add your payment screenshot in the form before you submit.</span></div></li>
+        <li><div><b>Get the link in your inbox</b><span>The Webex link and session access are sent to your email.</span></div></li>
+      </ol>
+      <div class="reg-cta">
+        <a class="btn js-register" href="https://forms.gle/9GgJEgpPT6nU1jws9" target="_blank" rel="noopener">Register now <span class="fee">&#8377;149</span></a>
+        <p class="small">The registration fee is non-refundable.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <p class="kicker">Questions</p>
+      <h2>Before you register</h2>
+      <details><summary>Who can attend?</summary><div class="a">This session is open to women only. It's especially for women in law, and for any woman who wants to feel more confident about money.</div></details>
+      <details><summary>When and where is it?</summary><div class="a">Sunday, 1 November 2026, from 12:30 to 1:30 PM IST. It's online, on Webex.</div></details>
+      <details><summary>How will I get the joining link?</summary><div class="a">Once you register, the link and session access are sent to the email address you give in the form.</div></details>
+      <details><summary>Do I need to know about finance?</summary><div class="a">No. You don't need to know everything about money to get started.</div></details>
+      <details><summary>Is the fee refundable?</summary><div class="a">No. The &#8377;149 registration fee is non-refundable.</div></details>
+      <details><summary>Will the session be recorded?</summary><div class="a"><span class="tbc">To be confirmed</span></div></details>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="about">
+        <img src="assets/wordmark.png" alt="Beyond the Bar" width="120" height="114">
+        <h2>Briefs, banter and conversations beyond case law</h2>
+        <p>Beyond the Bar is a community for women in law, beyond the courtroom. A space where women in law can connect, build genuine friendships and grow together.</p>
+        <div class="links">
+          <a class="btn light" href="https://chat.whatsapp.com/H9dXSjAGR4a7soWQOi2ICX" target="_blank" rel="noopener">Join the WhatsApp community</a>
+          <a class="btn light" href="https://www.instagram.com/_.beyondthebar._/" target="_blank" rel="noopener">Follow on Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">Beyond the Bar. For the woman behind the lawyer.</div></footer>
+
+<div class="bar" id="bar" aria-hidden="true">
+  <div class="t"><b>Beyond Her Worth</b>Sun 1 Nov, 12:30 PM</div>
+  <a class="btn js-register" href="https://forms.gle/9GgJEgpPT6nU1jws9" target="_blank" rel="noopener" tabindex="-1">Register <span class="fee">&#8377;149</span></a>
+</div>
+
+<script>
+// show the sticky register bar once the main Register button has scrolled past
+(function(){
+  var bar=document.getElementById('bar'),hero=document.getElementById('hero-cta'),link=bar.querySelector('a'),ticking=false;
+  function update(){
+    var off=hero.getBoundingClientRect().bottom<0;
+    bar.classList.toggle('show',off);bar.setAttribute('aria-hidden',off?'false':'true');link.tabIndex=off?0:-1;ticking=false;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(update);}},{passive:true});
+  update();
+})();
+</script>
+</body>
+</html>
