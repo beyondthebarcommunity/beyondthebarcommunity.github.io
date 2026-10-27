@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Beyond Her Worth | Beyond the Bar</title>
-<meta name="description" content="An online conversation on women and financial independence, hosted by Beyond the Bar. With Dr. Sushri Sangita Mishra. Sunday, 1 November 2026, 12:30 to 1:30 PM IST on Webex. Fee ₹149.">
+<meta name="description" content="An online conversation on women and financial independence, hosted by Beyond the Bar. With Dr. Sushri Sangita Mishra. Preview by Team Creator Intelligence.">
 <meta property="og:title" content="Beyond Her Worth | Beyond the Bar">
-<meta property="og:description" content="An online conversation on women and financial independence. With Dr. Sushri Sangita Mishra. Sunday, 1 November 2026, 12:30 to 1:30 PM IST on Webex. Fee ₹149.">
+<meta property="og:description" content="An online conversation on women and financial independence. With Dr. Sushri Sangita Mishra. Preview by Team Creator Intelligence.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://beyondthebarcommunity.github.io/">
-<meta property="og:image" content="https://beyondthebarcommunity.github.io/assets/share.jpg">
-<meta property="og:image:width" content="1080">
-<meta property="og:image:height" content="1350">
+<meta property="og:image" content="https://beyondthebarcommunity.github.io/assets/share-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#ECDCC6">
 <style>
@@ -46,7 +46,19 @@ a{color:inherit}
 .wrap{width:100%;max-width:760px;margin:0 auto;padding:0 20px}
 
 /* preview tag */
-.preview{position:fixed;top:12px;right:12px;z-index:60;background:var(--ink);color:var(--paper);font-family:var(--typed);font-weight:700;font-size:13px;padding:6px 12px;border-radius:999px}
+/* preview protection: redactions + watermarks */
+.rd{display:inline-block;width:var(--w);max-width:100%;height:.95em;vertical-align:-.12em;background:var(--ink);border-radius:2px;transform:rotate(-.6deg)}
+.fee .rd{background:var(--ink)}
+.ribbon{position:fixed;top:0;left:0;right:0;z-index:70;background:var(--ink);color:var(--paper);text-align:center;font-family:var(--typed);font-weight:700;font-size:14px;padding:9px 12px}
+body{padding-top:38px}
+.wm-tile{position:fixed;inset:0;z-index:55;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='300'%3E%3Ctext x='20' y='190' transform='rotate(-24 260 150)' font-family='Courier New,monospace' font-weight='700' font-size='26' fill='%232B1B15' fill-opacity='0.09'%3EPREVIEW %E2%80%93 TEAM CREATOR INTELLIGENCE%3C/text%3E%3C/svg%3E");background-size:520px 300px}
+.wm-stamp{position:absolute;left:50%;top:50%;z-index:6;pointer-events:none;transform:translate(-50%,-50%) rotate(-16deg);
+  border:6px solid var(--ink);border-radius:8px;padding:10px 22px 12px;text-align:center;color:var(--ink);opacity:.82;mix-blend-mode:multiply;white-space:nowrap;
+  font-family:var(--typed);font-weight:700;background:rgba(248,238,224,.35)}
+.wm-stamp b{display:block;font-size:clamp(38px,11vw,72px);line-height:1;letter-spacing:.12em}
+.wm-stamp span{display:block;font-size:clamp(13px,3.4vw,20px);margin-top:6px;letter-spacing:.04em}
+.wm-host{position:relative}
 
 /* ---------- hero ---------- */
 .hero{padding:40px 0 30px;text-align:center}
@@ -178,7 +190,8 @@ footer{padding:40px 0 130px;text-align:center;font-family:var(--typed);font-size
 </head>
 <body>
 
-<div class="preview" aria-hidden="true">Preview</div>
+<div class="ribbon" aria-hidden="true">Preview by Team Creator Intelligence</div>
+<div class="wm-tile" aria-hidden="true"></div>
 
 <header class="hero">
   <div class="wrap">
@@ -189,6 +202,7 @@ footer{padding:40px 0 130px;text-align:center;font-family:var(--typed);font-size
       <div class="tab">Women &amp; money</div>
       <div class="cover">
         <div class="tape" aria-hidden="true"></div>
+        <div class="wm-stamp" aria-hidden="true"><b>PREVIEW</b><span>Team Creator Intelligence</span></div>
         <div class="matter">In the matter of</div>
         <h1>Beyond Her Worth</h1>
         <div class="party"><span>Her financial independence</span><span class="dots"></span><b>Petitioner</b></div>
@@ -197,12 +211,12 @@ footer{padding:40px 0 130px;text-align:center;font-family:var(--typed);font-size
         <div class="hr"></div>
         <div class="listed">Listed for hearing</div>
         <dl class="facts">
-          <dt>On</dt><dd>Sunday, 1 November 2026</dd>
-          <dt>At</dt><dd>12:30 to 1:30 PM IST</dd>
-          <dt>Court</dt><dd>Online, on Webex</dd>
+          <dt>On</dt><dd><span class="rd" style="--w:22ch" aria-label="Hidden in preview"></span></dd>
+          <dt>At</dt><dd><span class="rd" style="--w:19ch" aria-label="Hidden in preview"></span></dd>
+          <dt>Court</dt><dd><span class="rd" style="--w:15ch" aria-label="Hidden in preview"></span></dd>
         </dl>
       </div>
-      <svg class="stamp" viewBox="0 0 260 260" role="img" aria-label="Registrations open. Entry fee 149 rupees">
+      <svg class="stamp" viewBox="0 0 260 260" role="img" aria-label="Registrations open">
         <defs>
           <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
             <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.1 1.3" result="m"/>
@@ -213,7 +227,7 @@ footer{padding:40px 0 130px;text-align:center;font-family:var(--typed);font-size
           <circle cx="130" cy="130" r="124" stroke-width="7"/>
           <circle cx="130" cy="130" r="72" stroke-width="3"/>
           <text font-family="Typed" font-weight="700" font-size="25" letter-spacing="3.4" fill="#D95034" stroke="none"><textPath href="#ring">REGISTRATIONS OPEN · ENTRY FEE ·</textPath></text>
-          <text x="130" y="148" text-anchor="middle" font-family="Fraunces" font-weight="900" font-size="54" fill="#D95034" stroke="none">&#8377;149</text>
+          <rect x="72" y="106" width="116" height="48" fill="#2B1B15" stroke="none"/>
         </g>
       </svg>
     </div>
@@ -221,7 +235,7 @@ footer{padding:40px 0 130px;text-align:center;font-family:var(--typed);font-size
     <p class="lede">A conversation on women and financial independence.</p>
     <p class="for">Especially for women in law, and for any woman who wants to feel more confident about money.</p>
     <p class="with">With <b>Dr. Sushri Sangita Mishra</b></p>
-    <a class="btn js-register" id="hero-cta" href="https://forms.gle/9GgJEgpPT6nU1jws9" target="_blank" rel="noopener">Register now <span class="fee">&#8377;149</span></a>
+    <a class="btn js-register" id="hero-cta" href="https://forms.gle/9GgJEgpPT6nU1jws9" target="_blank" rel="noopener">Register now <span class="fee"><span class="rd" style="--w:4ch" aria-label="Hidden in preview"></span></span></a>
     <p class="small">Opens the registration form</p>
   </div>
 </header>
@@ -268,7 +282,8 @@ footer{padding:40px 0 130px;text-align:center;font-family:var(--typed);font-size
   <section id="speaker">
     <div class="wrap">
       <p class="kicker">Our speaker</p>
-      <div class="witness">
+      <div class="witness wm-host">
+        <div class="wm-stamp" aria-hidden="true"><b>PREVIEW</b><span>Team Creator Intelligence</span></div>
         <div class="appear">Appearing for the Petitioner</div>
         <div class="who"><div class="mono" aria-hidden="true">SM</div><h3>Dr. Sushri Sangita Mishra</h3></div>
         <ul class="creds">
@@ -289,13 +304,16 @@ footer{padding:40px 0 130px;text-align:center;font-family:var(--typed);font-size
     <div class="wrap">
       <p class="kicker">How to register</p>
       <h2>Three steps to your seat</h2>
+      <div class="wm-host">
+      <div class="wm-stamp" aria-hidden="true"><b>PREVIEW</b><span>Team Creator Intelligence</span></div>
       <ol class="steps">
         <li><div><b>Fill in the registration form</b><span>Your name, email, WhatsApp number and a few quick questions.</span></div></li>
-        <li><div><b>Pay &#8377;149 and upload the screenshot</b><span>Add your payment screenshot in the form before you submit.</span></div></li>
-        <li><div><b>Get the link in your inbox</b><span>The Webex link and session access are sent to your email.</span></div></li>
+        <li><div><b>Pay <span class="rd" style="--w:4ch" aria-label="Hidden in preview"></span> and upload the screenshot</b><span>Add your payment screenshot in the form before you submit.</span></div></li>
+        <li><div><b>Get the link in your inbox</b><span>The <span class="rd" style="--w:5ch" aria-label="Hidden in preview"></span> link and session access are sent to your email.</span></div></li>
       </ol>
+      </div>
       <div class="reg-cta">
-        <a class="btn js-register" href="https://forms.gle/9GgJEgpPT6nU1jws9" target="_blank" rel="noopener">Register now <span class="fee">&#8377;149</span></a>
+        <a class="btn js-register" href="https://forms.gle/9GgJEgpPT6nU1jws9" target="_blank" rel="noopener">Register now <span class="fee"><span class="rd" style="--w:4ch" aria-label="Hidden in preview"></span></span></a>
         <p class="small">The registration fee is non-refundable.</p>
       </div>
     </div>
@@ -306,10 +324,10 @@ footer{padding:40px 0 130px;text-align:center;font-family:var(--typed);font-size
       <p class="kicker">Questions</p>
       <h2>Before you register</h2>
       <details><summary>Who can attend?</summary><div class="a">This session is open to women only. It's especially for women in law, and for any woman who wants to feel more confident about money.</div></details>
-      <details><summary>When and where is it?</summary><div class="a">Sunday, 1 November 2026, from 12:30 to 1:30 PM IST. It's online, on Webex.</div></details>
+      <details><summary>When and where is it?</summary><div class="a"><span class="rd" style="--w:24ch" aria-label="Hidden in preview"></span>, from <span class="rd" style="--w:16ch" aria-label="Hidden in preview"></span>. It's online, on <span class="rd" style="--w:5ch" aria-label="Hidden in preview"></span>.</div></details>
       <details><summary>How will I get the joining link?</summary><div class="a">Once you register, the link and session access are sent to the email address you give in the form.</div></details>
       <details><summary>Do I need to know about finance?</summary><div class="a">No. You don't need to know everything about money to get started.</div></details>
-      <details><summary>Is the fee refundable?</summary><div class="a">No. The &#8377;149 registration fee is non-refundable.</div></details>
+      <details><summary>Is the fee refundable?</summary><div class="a">No. The <span class="rd" style="--w:4ch" aria-label="Hidden in preview"></span> registration fee is non-refundable.</div></details>
       <details><summary>Will the session be recorded?</summary><div class="a"><span class="tbc">To be confirmed</span></div></details>
     </div>
   </section>
@@ -329,11 +347,11 @@ footer{padding:40px 0 130px;text-align:center;font-family:var(--typed);font-size
   </section>
 </main>
 
-<footer><div class="wrap">Beyond the Bar. For the woman behind the lawyer.</div></footer>
+<footer><div class="wrap">Beyond the Bar. For the woman behind the lawyer.<br>Preview designed and built by Team Creator Intelligence.</div></footer>
 
 <div class="bar" id="bar" aria-hidden="true">
-  <div class="t"><b>Beyond Her Worth</b>Sun 1 Nov, 12:30 PM</div>
-  <a class="btn js-register" href="https://forms.gle/9GgJEgpPT6nU1jws9" target="_blank" rel="noopener" tabindex="-1">Register <span class="fee">&#8377;149</span></a>
+  <div class="t"><b>Beyond Her Worth</b><span class="rd" style="--w:16ch" aria-label="Hidden in preview"></span></div>
+  <a class="btn js-register" href="https://forms.gle/9GgJEgpPT6nU1jws9" target="_blank" rel="noopener" tabindex="-1">Register <span class="fee"><span class="rd" style="--w:4ch" aria-label="Hidden in preview"></span></span></a>
 </div>
 
 <script>
