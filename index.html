@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Beyond Her Worth | Beyond the Bar</title>
-<meta name="description" content="An online conversation on women and financial independence, hosted by Beyond the Bar. Sunday, 1 November 2026, 12:30 to 1:30 PM IST on Webex. Fee ₹149.">
+<meta name="description" content="An online conversation on women and financial independence, hosted by Beyond the Bar. With Dr. Sushri Sangita Mishra. Sunday, 1 November 2026, 12:30 to 1:30 PM IST on Webex. Fee ₹149.">
 <meta property="og:title" content="Beyond Her Worth | Beyond the Bar">
-<meta property="og:description" content="An online conversation on women and financial independence. Sunday, 1 November 2026, 12:30 to 1:30 PM IST on Webex. Fee ₹149.">
+<meta property="og:description" content="An online conversation on women and financial independence. With Dr. Sushri Sangita Mishra. Sunday, 1 November 2026, 12:30 to 1:30 PM IST on Webex. Fee ₹149.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://beyondthebarcommunity.github.io/">
 <meta property="og:image" content="https://beyondthebarcommunity.github.io/assets/share.jpg">
@@ -107,11 +107,22 @@ p+p{margin-top:14px}
 .tags span{background:var(--pink);border-radius:18px;padding:10px 16px;font-family:var(--typed);font-size:15px;line-height:1.3}
 .note{margin-top:22px;font-family:var(--typed);font-size:15px;color:var(--ink-soft)}
 
-/* speaker placeholder */
-.speaker{display:flex;gap:20px;align-items:center;background:var(--paper);border:2px dashed var(--pink-deep);border-radius:12px;padding:22px}
-.speaker .ph{flex:0 0 84px;height:84px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:900;font-size:34px;color:var(--paper)}
-.speaker b{display:block;font-weight:700;font-size:20px;line-height:1.25}
-.speaker span{display:block;margin-top:4px;font-family:var(--typed);font-size:14px;line-height:1.45;color:var(--ink-soft)}
+/* speaker: witness card */
+.witness{position:relative;background-color:var(--paper);border-radius:4px;padding:30px 22px 26px 54px;transform:rotate(.6deg);
+  background-image:linear-gradient(transparent 0 33px, rgba(232,159,153,.45) 33px 34px);background-size:100% 34px;background-position:0 18px;
+  box-shadow:0 22px 34px -20px rgba(80,30,20,.45)}
+.witness::before{content:"";position:absolute;top:0;bottom:0;left:34px;width:2px;background:rgba(217,80,52,.45)}
+.witness .appear{font-family:var(--typed);font-weight:700;font-size:15px;color:var(--orange-text)}
+.witness .who{display:flex;gap:16px;align-items:center;margin:10px 0 6px}
+.witness .mono{flex:0 0 64px;height:64px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:900;font-size:24px;color:var(--ink)}
+.witness h3{font-family:var(--display);font-weight:900;font-variation-settings:"SOFT" 100,"opsz" 96;font-size:clamp(28px,7vw,40px);line-height:1}
+.witness .creds{list-style:none;margin:18px 0 0;font-family:var(--typed);font-size:15px;line-height:1.45}
+.witness .creds li{display:grid;grid-template-columns:22px 1fr;margin-bottom:8px}
+.witness .creds li::before{content:"\00A7";color:var(--orange-text);font-weight:700}
+#speaker .bio{margin-top:28px;color:var(--ink-soft)}
+#speaker .bio p+p{margin-top:12px}
+.hero .with{font-family:var(--typed);font-size:15px;margin:14px auto 0}
+.hero .with b{color:var(--ink)}
 
 /* steps: a real sequence */
 .steps{list-style:none;counter-reset:s;display:grid;gap:14px}
@@ -209,6 +220,7 @@ footer{padding:40px 0 130px;text-align:center;font-family:var(--typed);font-size
 
     <p class="lede">A conversation on women and financial independence.</p>
     <p class="for">Especially for women in law, and for any woman who wants to feel more confident about money.</p>
+    <p class="with">With <b>Dr. Sushri Sangita Mishra</b></p>
     <a class="btn js-register" id="hero-cta" href="https://forms.gle/9GgJEgpPT6nU1jws9" target="_blank" rel="noopener">Register now <span class="fee">&#8377;149</span></a>
     <p class="small">Opens the registration form</p>
   </div>
@@ -255,10 +267,20 @@ footer{padding:40px 0 130px;text-align:center;font-family:var(--typed);font-size
 
   <section id="speaker">
     <div class="wrap">
-      <p class="kicker">Speaker</p>
-      <div class="speaker">
-        <div class="ph" aria-hidden="true">?</div>
-        <div><b>Speaker details coming soon</b><span>We'll announce who's leading the conversation here shortly.</span></div>
+      <p class="kicker">Our speaker</p>
+      <div class="witness">
+        <div class="appear">Appearing for the Petitioner</div>
+        <div class="who"><div class="mono" aria-hidden="true">SM</div><h3>Dr. Sushri Sangita Mishra</h3></div>
+        <ul class="creds">
+          <li><span><b>25 years</b> in banking and financial services</span></li>
+          <li><span>Founder Director, <b>BlueDiscus Management</b></span></li>
+          <li><span>Lectures on finance and investment at <b>IIT Madras</b></span></li>
+          <li><span>Poet and author, translated into <b>12 languages</b></span></li>
+        </ul>
+      </div>
+      <div class="bio">
+          <p>Dr. Sushri Sangita Mishra has spent two and a half decades in banking and financial services, across investment banking, wealth management, branch banking, audit and product. She is the Founder Director of the investment firm BlueDiscus Management, and mentors and gives guest lectures on finance and investment to management students at the Department of Management Studies, IIT Madras, Soka Ikeda University, IFMR and Indian Business School.</p>
+          <p>She is also a poet and author whose work has been translated and published in 12 languages. She received a Doctorate in Literature from the World Academy of Arts and Culture, California, in 2021, and has presented at global platforms including Oxford and UNESCO.</p>
       </div>
     </div>
   </section>
